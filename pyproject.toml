@@ -1,7 +1,7 @@
 [project]
 name = "pythonicml"
 version = "0.1.0"
-description = "Add your description here"
+description = "Compare inference performance between Python and Rust using small-scale models"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

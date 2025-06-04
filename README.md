@@ -10,5 +10,5 @@
 ## Commands
 
 ```
-HF_TOKEN=<your_token> uv run main.py
+uv run main.py
 ```

@@ -8,3 +8,7 @@
 - uv
 
 ## Commands
+
+```
+HF_TOKEN=<your_token> uv run main.py
+```

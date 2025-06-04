@@ -1,11 +1,17 @@
+import os
 from huggingface_hub import login
 
 from transformers import pipeline
 import torch
 
 
-ACCESS_TOKEN = "HUGGINGFACE_ACCESS_TOKEN_COMES_HERE"
-login(ACCESS_TOKEN)
+ACCESS_TOKEN = os.environ["HF_TOKEN"]
+
+try:
+    login(ACCESS_TOKEN)
+except Exception as e:
+    print(f"Login failed: {e}")
+    exit(1)
 
 # https://huggingface.co/google/gemma-3-1b-it
 MODEL = "google/gemma-3-1b-it"
